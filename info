@@ -1,0 +1,8 @@
+The offcet:
+Valor medio do Acelerometro parado [0.02,0.10,9.76]
+Giroscopio 
+
+
+The scale (sensibilidade)
+gyro_scale = 131.0
+accel_scale = 16384.0
