@@ -71,7 +71,7 @@ def get_coordenada(values, n):
 
 if __name__ == '__main__':
 
-    file_name = 'data/novajogada.txt'
+    file_name = 'data/spin_amador_eri.data'
 
     acc_previous = [0, 0, 0]
     gyr_previous = [0, 0, 0]
