@@ -1,5 +1,5 @@
 
-ct = 0.5  # constante de tempo
+ct = 1 # constante de tempo
 dt = 1  # varição de tempo
 angle = [0, 0, 0]
 
@@ -21,9 +21,12 @@ class ComplementaryFilter(object):
         return angle_new
 
     def low_pass_f(self, acc_collect, acc_previous):
-        acc_new_x = (1 - self.alpha) * float(acc_collect[0]) + self.alpha * float(acc_previous[0])
-        acc_new_y = (1 - self.alpha) * float(acc_collect[1]) + self.alpha * float(acc_previous[1])
-        acc_new_z = (1 - self.alpha) * float(acc_collect[2]) + self.alpha * float(acc_previous[2])
+        # acc_new_x = (1 - self.alpha) * float(acc_collect[0]) + self.alpha * float(acc_previous[0])
+        # acc_new_y = (1 - self.alpha) * float(acc_collect[1]) + self.alpha * float(acc_previous[1])
+        # acc_new_z = (1 - self.alpha) * float(acc_collect[2]) + self.alpha * float(acc_previous[2])
+        acc_new_x = (float(acc_collect[0]) + float(acc_previous[0]))/2
+        acc_new_y = (float(acc_collect[0]) + float(acc_previous[0]))/2
+        acc_new_z = (float(acc_collect[0]) + float(acc_previous[0]))/2
         acc_new = []
         acc_new.append(acc_new_x)
         acc_new.append(acc_new_y)
@@ -39,4 +42,5 @@ class ComplementaryFilter(object):
         gyr_new.append(gyr_new_y)
         gyr_new.append(gyr_new_z)
         return gyr_new
+
 

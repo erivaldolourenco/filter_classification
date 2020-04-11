@@ -18,3 +18,5 @@ def get_coordenada(values, n):
     for value in values:
         v.append(float(value[n]))
     return v
+
+    
