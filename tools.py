@@ -1,3 +1,6 @@
+import os
+
+
 '''
 Ler uma linha do arquivo de dados e retorna a linha já sem caracteres indesejados
 ex: [1,3,4]
@@ -19,4 +22,18 @@ def get_coordenada(values, n):
         v.append(float(value[n]))
     return v
 
-    
+
+if __name__ == '__main__':
+
+	n_line = 0
+
+	files = os.listdir('data/amador')
+	for file in files:
+		with open('data/amador/'+file, 'r') as f:
+			
+			n_line += sum(1 for line in f)
+			print(str(file)+": "+str(n_line))
+
+	media = n_line/len(files)
+
+	print(media)
