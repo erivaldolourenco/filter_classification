@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="81298e58-b50c-481d-9783-3e1457ebdce9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cf/cf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cf/cf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_anilson.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_carla.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_carol.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_fernanda.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jacke.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jackeline.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jon.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jon2.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_sarah.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_anilson.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_carla.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_carol.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_fernanda.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_jackeline.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_jon.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_jon2.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_sarah.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/info" beforeDir="false" afterPath="$PROJECT_DIR$/info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1aS1VUaeUy8rzXjAyMtzh4Ylcej" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81298e58-b50c-481d-9783-3e1457ebdce9" name="Default Changelist" comment="" />
+      <created>1586714205231</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586714205231</updated>
+    </task>
+    <servers />
+  </component>
+</project>

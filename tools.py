@@ -26,14 +26,18 @@ def get_coordenada(values, n):
 if __name__ == '__main__':
 
 	n_line = 0
+	value = 20000
 
-	files = os.listdir('data/amador')
+	files = os.listdir('data/amateur/backhand')
 	for file in files:
-		with open('data/amador/'+file, 'r') as f:
+		with open('data/amateur/backhand/'+file, 'r') as f:
 			
-			n_line += sum(1 for line in f)
+
+			n_line = sum(1 for line in f)
+			if value > n_line:
+				value = n_line
 			print(str(file)+": "+str(n_line))
 
-	media = n_line/len(files)
+	#media = n_line/len(files)
 
-	print(media)
+	print(value)

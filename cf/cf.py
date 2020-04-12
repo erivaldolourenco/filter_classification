@@ -1,3 +1,7 @@
+import linecache
+from tools import *
+
+
 
 ct = 1 # constante de tempo
 dt = 1  # varição de tempo
@@ -43,4 +47,59 @@ class ComplementaryFilter(object):
         gyr_new.append(gyr_new_z)
         return gyr_new
 
+    def get_cfilter(self, file_name, filter_type=5):
 
+        acc_previous = [0, 0, 0]
+        gyr_previous = [0, 0, 0]
+        gyr_previous_filtred = [0, 0, 0]
+
+        angle_filter_list = []
+
+        gyr_high_pass_list = []
+        gyr_collect_list = []
+
+        acc_low_pass_list = []
+        acc_collect_list = []
+
+
+        lista_coordenadas = list()
+
+        with open(file_name, 'r') as file:
+            lines = file.readlines()
+
+            for i in range(1, int(len(lines))):
+
+                line = linecache.getline(file_name, i)
+                next_line = str(linecache.getline(file_name, i + 1))
+
+                if line[0] == 'A':
+                    acc_collect = get_value(line)
+                    acc_collect_list.append(acc_collect)
+                    acc_new = self.low_pass_f(acc_collect, acc_previous)
+                    acc_previous = acc_collect
+                    acc_low_pass_list.append(acc_new)
+
+                elif line[0] == 'G':
+                    gyr_collect = get_value(line)
+                    gyr_collect_list.append(gyr_collect)
+                    gyr_new = self.high_pass_f(gyr_collect, gyr_previous, gyr_previous_filtred)
+                    gyr_previous = gyr_collect
+                    gyr_previous_filtred = gyr_new
+                    gyr_high_pass_list.append(gyr_new)
+
+
+        for i in range(len(gyr_high_pass_list)):
+            angle_new = self.complementary_f(acc_low_pass_list[i], gyr_high_pass_list[i])
+            angle = angle_new
+            angle_filter_list.append(angle_new)
+
+        if filter_type == 1:
+            return acc_low_pass_list
+        elif filter_type == 2:
+            return acc_collect_list
+        elif filter_type == 3:
+            return gyr_high_pass_list
+        elif filter_type == 4:
+            return gyr_collect_list
+        else:
+            return angle_filter_list

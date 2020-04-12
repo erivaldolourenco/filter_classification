@@ -1,8 +1,6 @@
-The offcet:
-Valor medio do Acelerometro parado [0.02,0.10,9.76]
-Giroscopio 
+1 - filtrar arquivo
+	- passar arquivo no fitro e retornar a lista com coordenadas em um array
+2 - definir se é um arquivo de amador ou profissional
+	- adicionar uma ultima coordenada (1 para profissional e 0 para amador)
 
-
-The scale (sensibilidade)
-gyro_scale = 131.0
-accel_scale = 16384.0
+3 - pegar primeira coordenada de cada lista 
