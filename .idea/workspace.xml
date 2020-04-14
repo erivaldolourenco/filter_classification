@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81298e58-b50c-481d-9783-3e1457ebdce9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cf/cf.py" beforeDir="false" afterPath="$PROJECT_DIR$/cf/cf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_anilson.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_carla.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_carol.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_fernanda.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jacke.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jackeline.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jon.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_jon2.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/backhand_amador_sarah.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_anilson.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_carla.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_carol.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_fernanda.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_jackeline.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_jon.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_jon2.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/amador/spin_amador_sarah.data" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/info" beforeDir="false" afterPath="$PROJECT_DIR$/info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/filter_classification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/filter_classification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/knn/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/knn/knn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +19,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aS1VUaeUy8rzXjAyMtzh4Ylcej" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,6 +30,57 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.knn">
+    <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="filter_classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/knn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/knn/knn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="filter_classification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.knn" />
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -55,5 +94,55 @@
       <updated>1586714205231</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="453" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586828163776">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="453" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1586828163776" />
+    <state x="835" y="295" width="309" height="523" key="EnvironmentVariablesDialog" timestamp="1586827570686">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="835" y="295" width="309" height="523" key="EnvironmentVariablesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1586827570686" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1586827484537">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1586827484537" />
+    <state width="1827" height="275" key="GridCell.Tab.0.bottom" timestamp="1586832176437">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1586832176437" />
+    <state width="1827" height="275" key="GridCell.Tab.0.center" timestamp="1586832176437">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1586832176437" />
+    <state width="1827" height="275" key="GridCell.Tab.0.left" timestamp="1586832176436">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1586832176436" />
+    <state width="1827" height="275" key="GridCell.Tab.0.right" timestamp="1586832176437">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1586832176437" />
+    <state width="1827" height="340" key="GridCell.Tab.1.bottom" timestamp="1586830039841">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1586830039841" />
+    <state width="1827" height="340" key="GridCell.Tab.1.center" timestamp="1586830039840">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1586830039840" />
+    <state width="1827" height="340" key="GridCell.Tab.1.left" timestamp="1586830039840">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1586830039840" />
+    <state width="1827" height="340" key="GridCell.Tab.1.right" timestamp="1586830039841">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1827" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1586830039841" />
+    <state x="484" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1586828129071">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="484" y="188" width="1022" height="737" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1586828129071" />
   </component>
 </project>

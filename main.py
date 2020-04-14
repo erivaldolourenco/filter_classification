@@ -6,6 +6,7 @@ from cf.cf import ComplementaryFilter
 
 if __name__ == '__main__':
 
+
     file_name = 'data/spin_amador_eri.data'
 
     cf = ComplementaryFilter()
