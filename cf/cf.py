@@ -87,8 +87,18 @@ class ComplementaryFilter(object):
                     gyr_previous_filtred = gyr_new
                     gyr_high_pass_list.append(gyr_new)
 
+        value_limit = 0
 
-        for i in range(len(gyr_high_pass_list)):
+        # print("VALOR GYR HIGH:" + str(len(gyr_high_pass_list)))
+        # print("VALOR ACC LOW:" + str(len(acc_low_pass_list)))
+
+        if len(gyr_high_pass_list) < len(acc_low_pass_list):
+            value_limit = len(gyr_high_pass_list)
+        else:
+            value_limit = len(acc_low_pass_list)
+
+        # print("VALOR LIMITE:"+str(value_limit))
+        for i in range(value_limit):
             angle_new = self.complementary_f(acc_low_pass_list[i], gyr_high_pass_list[i])
             angle = angle_new
             angle_filter_list.append(angle_new)

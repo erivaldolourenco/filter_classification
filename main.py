@@ -15,7 +15,7 @@ if __name__ == '__main__':
     acc_antigo = cf.get_cfilter(file_name, 2)
     gyr_antigo = cf.get_cfilter(file_name, 4)
 
-    
+
 
 
     '''
