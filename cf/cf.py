@@ -12,6 +12,7 @@ class ComplementaryFilter(object):
         self.alpha = ct / (ct + dt)
         # print(self.alpha)
 
+
     def complementary_f(self, acc, gyr):
         angle_x = (1 - self.alpha) * float(gyr[0]) * dt + (self.alpha) * (float(acc[0]))
         angle_y = (1 - self.alpha) * float(gyr[1]) * dt + (self.alpha) * (float(acc[1]))
@@ -22,6 +23,7 @@ class ComplementaryFilter(object):
         angle_new.append(angle_z)
 
         return angle_new
+
 
     def low_pass_f(self, acc_collect, acc_previous):
         # acc_new_x = (1 - self.alpha) * float(acc_collect[0]) + self.alpha * float(acc_previous[0])
@@ -34,7 +36,9 @@ class ComplementaryFilter(object):
         acc_new.append(acc_new_x)
         acc_new.append(acc_new_y)
         acc_new.append(acc_new_z)
+
         return acc_new
+
 
     def high_pass_f(self, gyr_collect, gyr_previous, gyr_previous_filtred):
         gyr_new_x = (1 - self.alpha) * float(gyr_previous_filtred[0]) + (1 - self.alpha) * (float(gyr_collect[0]) - float(gyr_previous[0]))
@@ -44,32 +48,24 @@ class ComplementaryFilter(object):
         gyr_new.append(gyr_new_x)
         gyr_new.append(gyr_new_y)
         gyr_new.append(gyr_new_z)
+
         return gyr_new
 
     def get_cfilter(self, file_name, filter_type=5):
-
         acc_previous = [0, 0, 0]
         gyr_previous = [0, 0, 0]
         gyr_previous_filtred = [0, 0, 0]
-
         angle_filter_list = []
-
         gyr_high_pass_list = []
         gyr_collect_list = []
-
         acc_low_pass_list = []
         acc_collect_list = []
-
-
-        lista_coordenadas = list()
 
         with open(file_name, 'r') as file:
             lines = file.readlines()
 
             for i in range(1, int(len(lines))):
-
                 line = linecache.getline(file_name, i)
-                next_line = str(linecache.getline(file_name, i + 1))
 
                 if line[0] == 'A':
                     acc_collect = get_value(line)
@@ -86,17 +82,11 @@ class ComplementaryFilter(object):
                     gyr_previous_filtred = gyr_new
                     gyr_high_pass_list.append(gyr_new)
 
-        value_limit = 0
-
-        # print("VALOR GYR HIGH:" + str(len(gyr_high_pass_list)))
-        # print("VALOR ACC LOW:" + str(len(acc_low_pass_list)))
-
         if len(gyr_high_pass_list) < len(acc_low_pass_list):
             value_limit = len(gyr_high_pass_list)
         else:
             value_limit = len(acc_low_pass_list)
 
-        # print("VALOR LIMITE:"+str(value_limit))
         for i in range(value_limit):
             angle_new = self.complementary_f(acc_low_pass_list[i], gyr_high_pass_list[i])
             angle = angle_new
