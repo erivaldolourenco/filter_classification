@@ -1,6 +1,5 @@
 import linecache
-from tools import *
-
+from tools import get_value
 
 
 ct = 1 # constante de tempo
@@ -11,7 +10,7 @@ class ComplementaryFilter(object):
 
     def __init__(self):
         self.alpha = ct / (ct + dt)
-        print(self.alpha)
+        # print(self.alpha)
 
     def complementary_f(self, acc, gyr):
         angle_x = (1 - self.alpha) * float(gyr[0]) * dt + (self.alpha) * (float(acc[0]))
