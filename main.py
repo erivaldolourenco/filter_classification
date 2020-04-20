@@ -1,9 +1,10 @@
 from tools import *
+from config import *
 from cf.cf import ComplementaryFilter
 from knn.knn import KNN
 
 if __name__ == '__main__':
-    file_name = 'data/spin_amador_eri.data'
+    file_name = BASE_DIR+'/data/spin_amador_eri.data'
     print("################## INICIO ##################")
     print("==================== 1 ====================")
     cf = ComplementaryFilter()

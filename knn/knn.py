@@ -1,4 +1,5 @@
 import os
+from config import *
 from builtins import len
 from sklearn.neighbors import KNeighborsClassifier
 from cf.cf import ComplementaryFilter
@@ -24,10 +25,10 @@ class KNN(object):
         categories = ['amateur', 'professional']
 
         for category in categories:
-            files = os.listdir('data/' + str(category) + '/' + str(move_name))
+            files = os.listdir(BASE_DIR+'/data/' + str(category) + '/' + str(move_name))
 
             for file in files:
-                filter_list = cf.get_cfilter('data/' + str(category) + '/' + str(move_name) + '/' + str(file))
+                filter_list = cf.get_cfilter(BASE_DIR+'/data/' + str(category) + '/' + str(move_name) + '/' + str(file))
 
                 for i in range(self.n_lines):
                     inputs[i].append(filter_list[i])
@@ -59,9 +60,16 @@ class KNN(object):
 
 
 if __name__ == '__main__':
-    entradas = [[3, 2, 1], [3, 3, 1], [2, 4, 3], [2, 1, 4], [8, 9, 3], [6, 8, 3], [7, 4, 2], [6, 7, 8], [4, 2, 3],
-                [9, 6, 8]]
-    saidas = [1, 1, 1, 1, 0, 0, 0, 0, 1, 0]
+    knn = KNN(5,140)
+    move_name = 'backhand'
+    entradas = knn.get_in_out(move_name)[0][5]
+    saidas = knn.get_in_out(move_name)[1][5]
+    print("=============================================================================================")
+    print("ENTRADAS: "+str(entradas))
+    print("=============================================================================================")
+    print("SAIDAS: "+str(saidas))
+    print("=============================================================================================")
+
     p = 0.6
     limite = int(p * len(entradas))
     knn = KNeighborsClassifier(n_neighbors=3, p=2)
@@ -74,8 +82,9 @@ if __name__ == '__main__':
         if labels[indice_label] == saidas[i]:
             acertos += 1
         indice_label += 1
-
-    print("Total de treinamento %d" % limite)
-    print("Total de teste %d" % (len(entradas) - limite))
-    print("Total de acertos %d" % acertos)
-    print("Porcentagem de acertos %2.f" % (100 * acertos / (len(entradas) - limite)))
+    print("=============================================================================================")
+    print("Total de treinamento: %d" % limite)
+    print("Total de teste: %d" % (len(entradas) - limite))
+    print("Total de acertos: %d" % acertos)
+    print("Porcentagem de acertos: %2.f" % (100 * acertos / (len(entradas) - limite)))
+    print("=============================================================================================")
