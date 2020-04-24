@@ -25,10 +25,10 @@ class KNN(object):
         categories = ['amateur', 'professional']
 
         for category in categories:
-            files = os.listdir(BASE_DIR+'/data/' + str(category) + '/' + str(move_name))
+            files = os.listdir('data/' + str(category) + '/' + str(move_name))
 
             for file in files:
-                filter_list = cf.get_cfilter(BASE_DIR+'/data/' + str(category) + '/' + str(move_name) + '/' + str(file))
+                filter_list = cf.get_cfilter('data/' + str(category) + '/' + str(move_name) + '/' + str(file))
 
                 for i in range(self.n_lines):
                     inputs[i].append(filter_list[i])
